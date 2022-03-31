@@ -8,6 +8,12 @@ export const Container = styled.header`
   padding: 0 30px;
   position: fixed;
   z-index: 4;
+
+  @media (max-width: 768px) {
+    &{
+      padding: 15px;
+    }
+  }
 `
 
 export const ImgWrapper = styled.div`
@@ -37,6 +43,32 @@ export const MenuWrapper = styled.div`
       &:hover{
         border-bottom: 1px solid #333;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &{
+      display: none;
+    }
+  }
+`
+
+export const Sidebar = styled.div`
+  display: none;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    &{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    button{
+      border: transparent;
+      outline: transparent;
+      background-color: transparent;
+      font-size: 1.2rem;
+      color: #490139;
     }
   }
 `

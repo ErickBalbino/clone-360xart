@@ -17,6 +17,14 @@ export const FirstSection = styled.div`
     font-weight: 400;
     padding: 80px 40px;
     line-height: 1.3;
+
+    @media (max-width: 768px) {
+      &{
+        font-size: 2.2rem;
+        padding: 20px;
+        letter-spacing: 2px;
+      }
+    }
   }
 `
 
@@ -25,6 +33,10 @@ export const SecondSection = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 150px 0;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 `
 
 export const TextWrapper = styled.div`
@@ -36,6 +48,11 @@ export const TextWrapper = styled.div`
     font-size: 5rem;
     font-weight: 400;
     padding-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
+      padding-bottom: 20px;
+    }
   }
 
   p{
@@ -43,6 +60,17 @@ export const TextWrapper = styled.div`
     color: #490139;
     font-size: 1.6rem;
     line-height: 1.5;
+
+    @media (max-width: 768px) {
+      text-align: left;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &{
+      width: 90vw;
+    }
   }
 `
 
@@ -66,6 +94,11 @@ export const GroupButtons = styled.div`
     &:hover{
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+      font-size: 1.05rem;
+      height: 60px;
+    }
   }
 
   .button__right{
@@ -84,8 +117,9 @@ export const GroupButtons = styled.div`
 export const InfoWrapper = styled.div`
     box-sizing: border-box;
     position: relative;
-    min-height: 700px;
+    height: 1000px;
     overflow-y: hidden;
+    background-color: #FF4F43;
 `
 
 export const FirstInfo = styled.div`
@@ -104,13 +138,34 @@ export const FirstInfo = styled.div`
       font-weight: 400;
       line-height: 1.2;
       overflow: hidden;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 2.2rem;
+      }
     }
 
     p{
       width: 46%;
       font-size: 1.7rem;
       padding-top: 60px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 1.05rem;
+        padding-top: 30px;
+      }
     }
+
+    @media (max-width: 768px) {
+      &{
+        flex-direction: column;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
   }
 `
 

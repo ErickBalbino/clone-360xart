@@ -20,6 +20,12 @@ export default function Header() {
           <Link to='/#contact' className='menu__item'>CONTACT</Link>
         </ul>
       </styles.MenuWrapper>
+
+      <styles.Sidebar>
+        <button>
+          MENU
+        </button>
+      </styles.Sidebar>
     </styles.Container>
   )
 }
