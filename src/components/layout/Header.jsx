@@ -7,17 +7,17 @@ export default function Header() {
   return (
     <styles.Container>
       <styles.ImgWrapper>
-        <HashLink smooth to='/'>
+        <a href=''>
           <img src="/images/logo.png" alt="logo do site" />
-        </HashLink>
+        </a>
       </styles.ImgWrapper>
 
       <styles.MenuWrapper>
         <ul>
           <HashLink smooth to='/#about' className='menu__item'>ABOUT</HashLink>
           <HashLink smooth to='/#benefits' className='menu__item'>YOUR BENEFITS</HashLink>
-          <Link to='/#team' className='menu__item'>OUR TEAM</Link>
-          <Link to='/#contact' className='menu__item'>CONTACT</Link>
+          <HashLink smooth to='/#team' className='menu__item'>OUR TEAM</HashLink>
+          <HashLink to='/#contact' className='menu__item'>CONTACT</HashLink>
         </ul>
       </styles.MenuWrapper>
 

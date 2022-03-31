@@ -1,0 +1,19 @@
+textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 1.1rem;
+    padding: 20px 10px;
+    border: 1px solid #ff4f43;
+    background-color: transparent;
+    outline: transparent;
+    color: #ff4f43;
+    resize: none;
+}
+
+
+.p{
+    position: absolute;
+    transform: translate(10px, 3px);
+    color: #ff4f43;
+    font-size: 0.9rem;
+}

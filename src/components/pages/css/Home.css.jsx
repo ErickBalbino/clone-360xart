@@ -193,7 +193,7 @@ export const FourthSection = styled(SecondSection)`
 
 export const TeamContainer = styled.div`
   background-color: #F8F7F3;
-  padding: 100px 40px;
+  padding: 100px 0px;
 `
 
 export const TextDescription = styled.div`
@@ -208,6 +208,7 @@ export const TextDescription = styled.div`
       color: #FF4F43;
       font-size: 5rem;
       font-weight: 400;
+      padding-left: 40px;
     }
   }
 
@@ -225,17 +226,24 @@ export const TextDescription = styled.div`
       background-color: #FF4F43;
       color: #490139;
       border: transparent;
-      outline: transparent;
-      padding: 20px 50px;
+      outline: tr ansparent;
+      padding: 15px 50px;
       display: flex;
       align-items: center;
       font-size: 1.1rem;
       margin: 40px 0;
       box-shadow: 4px 4px 8px #b33b3258;
+      transition: 0.2s ease-in-out background-color;
 
       .icon{
         font-size: 0.9rem;
         margin: 0 5px;
+      }
+
+      &:hover{
+        cursor: pointer;
+        background-color: #490139;
+        color: #FF4F43;
       }
     }
   }
@@ -245,7 +253,6 @@ export const ImagesDescription = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  grid-gap: 40px;
   padding: 50px 0;
 `
 
@@ -271,6 +278,78 @@ export const FormContainer = styled.div`
 
   .form__container{
     width: 47vw;
-    border: 1px solid green;
+    padding-left: 50px;
+    box-sizing: border-box;
+
+    fieldset{
+      width: 100%;
+      border: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      margin: 20px 0;
+    }
+
+    .container__send{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .send__button{
+        width: 25%;
+
+        button{
+          background-color: #FF4F43;
+          color: #490139;
+          border: none;
+          outline: none;
+          height: 60px;
+          width: 100%;
+          padding: 0 40px;
+          font-size: 1.1rem;
+          text-align: center;
+          transition: 0.2s ease-in-out background-color;
+
+          &:hover{
+            cursor: pointer;
+            color: #490139;
+            background-color: #fff;
+          }
+        }
+      }
+
+      .send_confirmTerms{
+        width: 70%;
+
+        .label{
+          display: flex;
+          align-items: center;
+          height: 60px;
+
+          input[type='checkbox']{
+            all: unset;
+            height: 20px;
+            width: 40px;
+            background-color: transparent;
+            border: 1px solid #FF4F43;
+            margin-right: 10px;
+
+            &:checked{
+              background-color: #FF4F43;
+            }
+          }
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+
+        .span,
+        p{
+          font-size: 0.55rem;
+          color: #FF4F43;
+        }
+      }
+    }
   }
 `

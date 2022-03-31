@@ -5,6 +5,8 @@ import { FaArrowRight } from 'react-icons/fa'
 
 import './css/Home.css.jsx'
 import PersonTeam from '../project/PersonTeam'
+import Input from '../project/form/Input'
+import Textarea from '../project/form/Textarea'
 
 export default function Home() {
 
@@ -76,22 +78,22 @@ export default function Home() {
         </styles.FourthSection>
       </Zoom>
 
-      <styles.TeamContainer>
-        <styles.TextDescription>
-            <div className='title__team'>
-              <h2>Our team</h2>
-            </div>
-
-            <div className='description__team'>
-              <p>
-              We are 360X ART - We combine our expertise and passion for art, finance and new technologies to enable everyone to articipate in tokenized masterpieces.
-              </p>
-
-              <button> 
-                <FaArrowRight className='icon' /> JOIN OUR TEAM 
-              </button>
-            </div>
-        </styles.TextDescription>
+      <styles.TeamContainer id='team'>
+        <Zoom bottom>
+          <styles.TextDescription>
+              <div className='title__team'>
+                <h2>Our team</h2>
+              </div>
+              <div className='description__team'>
+                <p>
+                We are 360X ART - We combine our expertise and passion for art, finance and new technologies to enable everyone to articipate in tokenized masterpieces.
+                </p>
+                <button>
+                  <FaArrowRight className='icon' /> JOIN OUR TEAM
+                </button>
+              </div>
+          </styles.TextDescription>
+        </Zoom>
 
         <styles.ImagesDescription>
             <PersonTeam 
@@ -128,9 +130,36 @@ export default function Home() {
             <h2>Articipate now in tokenized art</h2>
         </div>
 
-        <div className='form__container'>
-            <p>formulario react form</p>
-        </div>
+        <form className='form__container'>
+          <fieldset>
+            <Input text='Firstname' type='text' name='txtfirstname' id='txtfirstname' />
+
+            <Input text='Lastname' type='text' name='txtsecondname' id='txtsecondname' />
+          </fieldset>
+
+          <fieldset>
+            <Input text='Email' type='email' name='txtemail' id='txtemail' />
+
+            <Input text='Profession' type='text' name='txtprofession' id='txtprofession' />
+          </fieldset>
+
+          <Textarea text='Message' name='txtmessage' id='txtmessage' />
+
+          <div className='container__send'>
+            <label className='send__button'>
+              <button>SEND</button>
+            </label>
+
+            <div className='send_confirmTerms'>
+              <label htmlFor="confirmTerms" className='label'>
+                <input type="checkbox" name="confirmTerms" id="confirmTerms" /> 
+                <span className='span'>Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen gespeichert werden.*</span> 
+              </label>
+
+              <p>Please note that we share information you submit through this contact form with our partner 360X AG. For more information, please refer to our Data Protection Notice.</p>
+            </div>
+          </div>
+        </form>
       </styles.FormContainer>
     </styles.Container>
   )
