@@ -7,6 +7,7 @@ import './css/Home.css.jsx'
 import PersonTeam from '../project/PersonTeam'
 import Input from '../project/form/Input'
 import Textarea from '../project/form/Textarea'
+import ItemSlider from '../project/ItemSlider'
 
 export default function Home() {
 
@@ -47,8 +48,38 @@ export default function Home() {
               </p>
             </div>
             
-            <div>
-              
+            <div className='carrosel__container'>
+              <ItemSlider 
+                srcImage='/images/svg1.svg' 
+                alt='svg 1' 
+                title='Quality Access' 
+                description='Access to curated, high-value artworks via digitally secured Art Tokens (on the 360X marketplace)' 
+                textCondition='FirstSlide'
+              />
+
+              <ItemSlider 
+                srcImage='/images/svg2.svg' 
+                alt='svg 2' 
+                title='Security' 
+                description='Highly secure and insured artworks, legally secured contract, externally audited technology'
+                textCondition='FirstSlide' 
+              />
+
+              <ItemSlider 
+                srcImage='/images/svg3.svg' 
+                alt='svg 3' 
+                title='Expertise' 
+                description='Best practice art due diligence and evaluations by external partners and domain experts' 
+                textCondition='FirstSlide'
+              />
+
+              <ItemSlider 
+                srcImage='/images/svg4.svg' 
+                alt='svg 4' 
+                title='Simplicity' 
+                description='Simple, seamless and efficient processes, no technological knowledge required' 
+                textCondition='FirstSlide'
+              />
             </div>
           </styles.FirstInfo>
 
@@ -61,8 +92,30 @@ export default function Home() {
                 </p>
               </div>
 
-              <div>
+              <div className='carrosel__container'>
+                <ItemSlider 
+                  srcImage='/images/svg5.svg' 
+                  alt='svg 5' 
+                  title='Flexibility' 
+                  description='Tech and Token Terms are tailored to your artwork and needs' 
+                  textCondition='SecondSLide'
+                />
 
+                <ItemSlider 
+                  srcImage='/images/svg6.svg' 
+                  alt='svg 6' 
+                  title='Security' 
+                  description='Share stakes in your artworks with fellow art enthusiasts and exchange them against fiat or crypto' 
+                  textCondition='SecondSLide'
+                />
+
+                <ItemSlider 
+                  srcImage='/images/svg7.svg' 
+                  alt='svg 7' 
+                  title='Expertise' 
+                  description='Seasoned art market professionals, technological and legal experts ready your artwork and guide you through the process' 
+                  textCondition='SecondSLide'
+                />
               </div>
             </styles.SecondInfo>
           )}

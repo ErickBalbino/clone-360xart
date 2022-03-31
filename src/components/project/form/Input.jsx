@@ -13,7 +13,7 @@ export default function Input({ text, type, name, id }) {
         {text}
       </p>
 
-      <input type={type} name={name} id={id} onClick={() => {setStateText('click')}} />
+      <input type={type} name={name} id={id} onFocus={() => {setStateText('click')}} />
     </label>
   )
 }

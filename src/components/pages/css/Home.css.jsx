@@ -117,7 +117,7 @@ export const GroupButtons = styled.div`
 export const InfoWrapper = styled.div`
     box-sizing: border-box;
     position: relative;
-    height: 1000px;
+    height: 1100px;
     overflow-y: hidden;
     background-color: #FF4F43;
 `
@@ -164,6 +164,13 @@ export const FirstInfo = styled.div`
     }
   }
 
+  .carrosel__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 100px; 
+  }
+
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
@@ -184,6 +191,13 @@ export const SecondInfo = styled(FirstInfo)`
     p{
       color: #FF4F43;
     }
+  }
+
+  .carrosel__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    padding: 100px 200px; 
   }
 `
 

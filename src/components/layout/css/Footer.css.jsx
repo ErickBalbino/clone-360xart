@@ -32,9 +32,13 @@ export const ListWrapper = styled.div`
             color: #490139;
             font-size: 1.4rem;
             line-height: 2;
-
+            
             @media (max-width: 768px) {
                 font-size: 0.85rem;
+            }
+
+            &:hover{
+                text-decoration: underline;
             }
         }
     }
