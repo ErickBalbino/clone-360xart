@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
     width: 100vw;
-    padding: 60px 40px 100px 40px;
+    padding: 60px 40px 300px 40px;
     background-color: #FF4F43;
     display: flex;
 
@@ -65,6 +65,6 @@ export const Copyright = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         justify-content: flex-start;
-        padding-top: 60px;
+        padding-top: 300px;
     }
 `

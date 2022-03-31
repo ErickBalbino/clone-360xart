@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import * as styles from './css/Home.css.jsx'
 import Zoom  from 'react-reveal/Zoom'
+import { FaArrowRight } from 'react-icons/fa'
 
 import './css/Home.css.jsx'
+import PersonTeam from '../project/PersonTeam'
 
 export default function Home() {
 
@@ -73,6 +75,63 @@ export default function Home() {
           </styles.TextWrapper>
         </styles.FourthSection>
       </Zoom>
+
+      <styles.TeamContainer>
+        <styles.TextDescription>
+            <div className='title__team'>
+              <h2>Our team</h2>
+            </div>
+
+            <div className='description__team'>
+              <p>
+              We are 360X ART - We combine our expertise and passion for art, finance and new technologies to enable everyone to articipate in tokenized masterpieces.
+              </p>
+
+              <button> 
+                <FaArrowRight className='icon' /> JOIN OUR TEAM 
+              </button>
+            </div>
+        </styles.TextDescription>
+
+        <styles.ImagesDescription>
+            <PersonTeam 
+              srcImage='/images/shirin-marquart.jpg' alt='imagem ceo da empresa' 
+              name='Shirin Marquart'
+              job='CEO'
+              title_author='FAVOURITE ARTWORK:'
+              name_artwork='Dynamism of a Dog on a Leash - Giacomo Balla'
+              linkedinUrl='https://linkedin.com'
+            />
+            
+            <PersonTeam 
+              srcImage='/images/katharina-helena-schulz.jpg' alt='imagem coo da empresa' 
+              name='Katharina Helena Schulz'
+              job='COO'
+              title_author='FAVOURITE ARTWORK:'
+              name_artwork='Untitled, 1961 - Robert Ryman'
+              linkedinUrl='https://linkedin.com'
+            />
+
+            <PersonTeam 
+              srcImage='/images/albane-beauregard.jpg' alt='imagem coo da empresa' 
+              name='Albane de Bareugard'
+              job='WORKING STUDENT BUSINESS OPERATIONS'
+              title_author='FAVOURITE ARTWORK:'
+              name_artwork='Woman Power - Maria Lassnig'
+              linkedinUrl=''
+            />
+        </styles.ImagesDescription>
+      </styles.TeamContainer>
+
+      <styles.FormContainer>
+        <div className='title__container'>
+            <h2>Articipate now in tokenized art</h2>
+        </div>
+
+        <div className='form__container'>
+            <p>formulario react form</p>
+        </div>
+      </styles.FormContainer>
     </styles.Container>
   )
 }
