@@ -16,3 +16,11 @@ input{
     color: #ff4f43;
     font-size: 0.9rem;
 }
+
+
+@media (max-width: 768px) {
+    input{
+        height: 55px;
+        margin-bottom: 20px;
+    }
+}

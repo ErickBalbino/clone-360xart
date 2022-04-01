@@ -17,7 +17,7 @@ export default function Header() {
           <HashLink smooth to='/#about' className='menu__item'>ABOUT</HashLink>
           <HashLink smooth to='/#benefits' className='menu__item'>YOUR BENEFITS</HashLink>
           <HashLink smooth to='/#team' className='menu__item'>OUR TEAM</HashLink>
-          <HashLink to='/#contact' className='menu__item'>CONTACT</HashLink>
+          <HashLink smooth to='/#contact' className='menu__item'>CONTACT</HashLink>
         </ul>
       </styles.MenuWrapper>
 

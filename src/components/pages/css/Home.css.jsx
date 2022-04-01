@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.main`
 `
 
+
 export const FirstSection = styled.div`
   background-color: #FF4F43;
   height: 100vh;
@@ -28,6 +29,7 @@ export const FirstSection = styled.div`
   }
 `
 
+
 export const SecondSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -50,7 +52,8 @@ export const TextWrapper = styled.div`
     padding-bottom: 40px;
 
     @media (max-width: 768px) {
-      font-size: 2.2rem;
+      font-size: 2.7rem;
+      line-height: 1.3;
       padding-bottom: 20px;
     }
   }
@@ -75,9 +78,22 @@ export const TextWrapper = styled.div`
 `
 
 
+export const SquareContainer = styled.div`
+  height: 600px;
+  display: flex;
+  align-items: flex-start;
+  margin: 100px 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+
 export const ThirdSection = styled.div`
   
 `
+
 
 export const GroupButtons = styled.div`
   width: 100vw;
@@ -114,6 +130,7 @@ export const GroupButtons = styled.div`
   }
 `
 
+
 export const InfoWrapper = styled.div`
     box-sizing: border-box;
     position: relative;
@@ -121,6 +138,7 @@ export const InfoWrapper = styled.div`
     overflow-y: hidden;
     background-color: #FF4F43;
 `
+
 
 export const FirstInfo = styled.div`
   background-color: #FF4F43;
@@ -176,6 +194,7 @@ export const FirstInfo = styled.div`
   }
 `
 
+
 export const SecondInfo = styled(FirstInfo)`
   background-color: #490139;
   
@@ -201,14 +220,17 @@ export const SecondInfo = styled(FirstInfo)`
   }
 `
 
+
 export const FourthSection = styled(SecondSection)`
 
 `
+
 
 export const TeamContainer = styled.div`
   background-color: #F8F7F3;
   padding: 100px 0px;
 `
+
 
 export const TextDescription = styled.div`
   display: flex;
@@ -223,6 +245,16 @@ export const TextDescription = styled.div`
       font-size: 5rem;
       font-weight: 400;
       padding-left: 40px;
+
+      @media (max-width: 768px) {
+        font-size: 2.7rem;
+        padding-left: 0;
+        padding-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -234,6 +266,10 @@ export const TextDescription = styled.div`
       font-size: 1.6rem;
       line-height: 1.5;
       width: 90%;
+
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+      }
     }
 
     button{
@@ -260,14 +296,30 @@ export const TextDescription = styled.div`
         color: #FF4F43;
       }
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &{
+      flex-direction: column;
+      padding: 0px 15px;
+    }
   }
 `
+
 
 export const ImagesDescription = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   padding: 50px 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 
@@ -287,6 +339,15 @@ export const FormContainer = styled.div`
       font-weight: 400;
       line-height: 1.3;
       overflow-y: hidden;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
     }
   }
 
@@ -302,6 +363,12 @@ export const FormContainer = styled.div`
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 40px;
       margin: 20px 0;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        grid-gap: 0;
+      }
     }
 
     .container__send{
@@ -364,6 +431,23 @@ export const FormContainer = styled.div`
           color: #FF4F43;
         }
       }
+
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
     }
+
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 150px 15px;
+    flex-direction: column;
   }
 `

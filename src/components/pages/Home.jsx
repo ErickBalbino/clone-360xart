@@ -8,6 +8,7 @@ import PersonTeam from '../project/PersonTeam'
 import Input from '../project/form/Input'
 import Textarea from '../project/form/Textarea'
 import ItemSlider from '../project/ItemSlider'
+import Square from '../project/Square'
 
 export default function Home() {
 
@@ -26,6 +27,12 @@ export default function Home() {
             <h2>About 360X Art</h2>
             <p>We are here to open up the art market. Soon we will be launching a new platform that enables art owners to tokenize their art and so they can share their artworks with communities of art enthusiasts and art lovers who want to own virtual pieces of real masterpieces in the form of art tokens. And if you find this opportunity as exciting as we do, here is how you can articipate!</p>
           </styles.TextWrapper>
+
+          <styles.SquareContainer>
+            <Square title='I am interested in tokenizing my artwork' btnText='GET IN TOUCH' cssConditional='FirstSquare' />
+
+            <Square title='I am interested in buying art tokens on the marketplace of 360X AG' btnText='JOIN WAITING LIST' cssConditional='SecondSquare' />
+          </styles.SquareContainer>
         </styles.SecondSection>
       </Zoom>
 

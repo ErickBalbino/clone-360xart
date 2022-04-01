@@ -43,4 +43,9 @@ export const Container = styled.div`
             margin-right: 4px;
         }
     }
+
+    @media (max-width: 768px) {
+        width: 90vw;
+        margin-bottom: 60px;
+    }
 `
