@@ -7,7 +7,7 @@ export default function Square({ title, btnText, cssConditional }) {
   return (
     <HashLink to='/#contact'>
         <styles.Container
-            style={cssConditional === 'FirstSquare' ? {backgroundColor: '#FF4F43', alignSelf: 'flex-end'} : {backgroundColor: '#490139'}}
+            style={cssConditional === 'FirstSquare' ? {backgroundColor: '#FF4F43', marginTop: '50px'} : {backgroundColor: '#490139'}}
         >
             <h3
                 style={cssConditional === 'FirstSquare' ? {color: '#490139'} : {color: '#FF4F43'}}

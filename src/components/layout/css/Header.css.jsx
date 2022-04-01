@@ -104,7 +104,7 @@ export const Sidebar = styled.div`
       border: transparent;
       outline: transparent;
       background-color: transparent;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #490139;
       z-index: 10;
     }

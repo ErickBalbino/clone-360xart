@@ -134,7 +134,6 @@ export const InfoWrapper = styled.div`
   box-sizing: border-box;
   position: relative;
   height: 1100px;
-  overflow-y: hidden;
   background-color: #FF4F43;
 
   @media (max-width: 768px) {
@@ -194,6 +193,7 @@ export const FirstInfo = styled.div`
 
     @media (max-width: 768px) {
       padding: 70px 0;
+      overflow: scroll;
     }
   }
 

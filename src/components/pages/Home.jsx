@@ -15,6 +15,10 @@ export default function Home() {
   {/* Control the visualization of the third section */}
   const[viewInfo, setViewInfo] = useState(false)
 
+  const submit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <styles.Container>
       <styles.FirstSection>
@@ -190,7 +194,7 @@ export default function Home() {
             <h2>Articipate now in tokenized art</h2>
         </div>
 
-        <form className='form__container'>
+        <form className='form__container' onSubmit={submit}>
           <fieldset>
             <Input text='Firstname' type='text' name='txtfirstname' id='txtfirstname' />
 
