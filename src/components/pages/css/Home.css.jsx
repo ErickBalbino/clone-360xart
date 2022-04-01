@@ -79,7 +79,6 @@ export const TextWrapper = styled.div`
 
 
 export const SquareContainer = styled.div`
-  height: 600px;
   display: flex;
   align-items: flex-start;
   margin: 100px 0;
