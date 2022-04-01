@@ -34,6 +34,7 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-        width: 80vw;
+        width: 95vw;
+        padding: 0 30px;
     }
 `
