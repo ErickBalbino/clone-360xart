@@ -37,7 +37,7 @@ export const SecondSection = styled.div`
   padding: 150px 0;
 
   @media (max-width: 768px) {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 `
 
@@ -135,6 +135,7 @@ export const InfoWrapper = styled.div`
   position: relative;
   height: 1100px;
   background-color: #FF4F43;
+  overflow-y: hidden;
 
   @media (max-width: 768px) {
     height: 850px;
