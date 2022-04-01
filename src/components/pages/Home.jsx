@@ -55,7 +55,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className='carrosel__container'>
+            <div className='images__container'>
               <ItemSlider 
                 srcImage='/images/svg1.svg' 
                 alt='svg 1' 
@@ -99,7 +99,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className='carrosel__container'>
+              <div className='images__container'>
                 <ItemSlider 
                   srcImage='/images/svg5.svg' 
                   alt='svg 5' 

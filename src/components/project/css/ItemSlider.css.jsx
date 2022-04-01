@@ -11,6 +11,10 @@ export const Container = styled.div`
     img{
         width: 100px;
         margin-bottom: 50px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 
     h3, p{
@@ -27,5 +31,9 @@ export const Container = styled.div`
         text-align: center;
         font-size: 0.9rem;
         line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        width: 80vw;
     }
 `

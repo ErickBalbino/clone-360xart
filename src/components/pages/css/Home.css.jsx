@@ -22,7 +22,7 @@ export const FirstSection = styled.div`
     @media (max-width: 768px) {
       &{
         font-size: 2.2rem;
-        padding: 20px;
+        padding: 80px 20px;
         letter-spacing: 2px;
       }
     }
@@ -132,11 +132,15 @@ export const GroupButtons = styled.div`
 
 
 export const InfoWrapper = styled.div`
-    box-sizing: border-box;
-    position: relative;
-    height: 1100px;
-    overflow-y: hidden;
-    background-color: #FF4F43;
+  box-sizing: border-box;
+  position: relative;
+  height: 1100px;
+  overflow-y: hidden;
+  background-color: #FF4F43;
+
+  @media (max-width: 768px) {
+    height: 850px;
+  }
 `
 
 
@@ -178,19 +182,25 @@ export const FirstInfo = styled.div`
     @media (max-width: 768px) {
       &{
         flex-direction: column;
+        width: 95vw;
       }
     }
   }
 
-  .carrosel__container{
+  .images__container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
     padding: 100px; 
+
+    @media (max-width: 768px) {
+      padding: 70px 0;
+    }
   }
 
   @media (max-width: 768px) {
-    padding: 40px 20px;
+    box-sizing: border-box;
+    padding: 40px 10px;
   }
 `
 
@@ -212,11 +222,16 @@ export const SecondInfo = styled(FirstInfo)`
     }
   }
 
-  .carrosel__container{
+  .images__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     padding: 100px 200px; 
+
+    @media (max-width: 768px) {
+      display: flex;
+      padding: 70px 0;
+    }
   }
 `
 
@@ -397,6 +412,11 @@ export const FormContainer = styled.div`
             background-color: #fff;
           }
         }
+
+        @media (max-width: 768px) {
+          width: 40%;
+          margin: 20px 0;
+        }
       }
 
       .send_confirmTerms{
@@ -418,6 +438,10 @@ export const FormContainer = styled.div`
             &:checked{
               background-color: #FF4F43;
             }
+
+            @media (max-width: 768px) {
+              height: 15px;
+            }
           }
 
           &:hover{
@@ -429,6 +453,15 @@ export const FormContainer = styled.div`
         p{
           font-size: 0.55rem;
           color: #FF4F43;
+
+          @media (max-width: 768px) {
+            font-size: 0.65rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          width: 100%;
+          margin: 10px 0;
         }
       }
 
