@@ -59,6 +59,41 @@ export const Sidebar = styled.div`
   display: none;
   width: 50%;
 
+  .sidebar__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FF4F43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out transform;
+
+    .sidebar__btnClose{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 20px;
+      display: none;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .list__item{
+        font-size: 1.7rem;
+        padding: 10px 0;
+        color: #490139;
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     &{
       display: flex;
@@ -71,6 +106,7 @@ export const Sidebar = styled.div`
       background-color: transparent;
       font-size: 1.2rem;
       color: #490139;
+      z-index: 10;
     }
   }
 `
