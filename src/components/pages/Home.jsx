@@ -185,7 +185,7 @@ export default function Home() {
         </styles.ImagesDescription>
       </styles.TeamContainer>
 
-      <styles.FormContainer>
+      <styles.FormContainer id='contact'>
         <div className='title__container'>
             <h2>Articipate now in tokenized art</h2>
         </div>

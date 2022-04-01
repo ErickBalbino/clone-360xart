@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import * as styles from './css/Header.css.jsx'
 import { HashLink } from 'react-router-hash-link';
 
 export default function Header() {
   return (
-    <styles.Container>
+    <styles.Container id='header'>
       <styles.ImgWrapper>
-        <a href=''>
+        <a href='#'>
           <img src="/images/logo.png" alt="logo do site" />
         </a>
       </styles.ImgWrapper>
